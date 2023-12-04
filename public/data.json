@@ -1,0 +1,123 @@
+{
+  "shops": [
+    {
+      "Product": 1,
+      "Img": "https://i.ibb.co/tzBDQVj/product1.jpg",
+      "ProductName": "Indoor Hydroponics System",
+      "Price": 65,
+      "ProductLink": "https://www.amazon.com/SereneLife-Kit-Hydroponic-Adjustable-Modes-Home-SLGLF130/dp/B095J1P3WM/ref=sr_1_6?crid=242PX0C3WNNQ6&keywords=Hydroponics&qid=1700475815&sprefix=hydropon%2Caps%2C671&sr=8-6&th=1"
+    },
+    {
+      "Product": 2,
+      "Img": "https://i.ibb.co/2YQTX0X/product2.jpg",
+      "ProductName": "Hydroponics DIY Frame",
+      "Price": 55,
+      "ProductLink": "https://www.amazon.com/VEVOR-Hydroponics-108-Sites-Layers/dp/B09Z6RQNHZ/ref=sr_1_18_sspa?crid=242PX0C3WNNQ6&keywords=Hydroponics&qid=1700475815&sprefix=hydropon%2Caps%2C671&sr=8-18-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1"
+    },
+    {
+      "Product": 3,
+      "Img": "https://i.ibb.co/f45sCTK/product3.jpg",
+      "ProductName": "Water Pump",
+      "Price": 70,
+      "ProductLink": "https://www.amazon.com/Hydrofarm-Active-Aqua-Submersible-Water/dp/B0049XENYS/ref=sr_1_40?crid=242PX0C3WNNQ6&keywords=Hydroponics&qid=1700475815&sprefix=hydropon%2Caps%2C671&sr=8-40"
+    },
+    {
+      "Product": 4,
+      "Img": "https://i.ibb.co/PMJg6j9/product4.jpg",
+      "ProductName": "Truncheon Nutrient Meter",
+      "Price": 105,
+      "ProductLink": "https://www.amazon.com/Bluelab-Truncheon-Nutrient-Meter-Germination/dp/B00348PV6S/ref=sr_1_9?crid=2FWXTV8TZBUT7&keywords=hydroponics&qid=1700480076&sprefix=hydroponics%2Caps%2C681&sr=8-9"
+    },
+    {
+      "Product": 5,
+      "Img": "https://i.ibb.co/CVC3c5Q/product5.jpg",
+      "ProductName": "Bluelab MONGUACON Guardian Monitor",
+      "Price": 391,
+      "ProductLink": "https://www.amazon.com/Bluelab-Guardian-Monitor-CONNECT-Version/dp/B00KCT15Q2/ref=sr_1_17?crid=2FWXTV8TZBUT7&keywords=hydroponics&qid=1700480355&sprefix=hydroponics%2Caps%2C681&sr=8-17&th=1"
+    },
+    {
+      "Product": 6,
+      "Img": "https://i.ibb.co/R7zsJdk/product6.jpg",
+      "ProductName": "TIRUSS Hydroponic Tower Growing System",
+      "Price": 195,
+      "ProductLink": "https://www.amazon.com/TIRUSS-Hydroponic-Growing-Gardening-Vertical/dp/B0897HTVT6/ref=sr_1_48?crid=2FWXTV8TZBUT7&keywords=hydroponics&qid=1700480355&sprefix=hydroponics%2Caps%2C681&sr=8-48"
+    },
+    {
+      "Product": 7,
+      "Img": "https://i.ibb.co/zF2VVVC/product7.jpg",
+      "ProductName": "SereneLife Medium Hydroponic Grow Tent",
+      "Price": 79,
+      "ProductLink": "https://www.amazon.com/Medium-Hydroponic-Grow-Tent-Garden/dp/B09RTVZ581/ref=sr_1_95?crid=2FWXTV8TZBUT7&keywords=hydroponics&qid=1700480634&sprefix=hydroponics%2Caps%2C681&sr=8-95&th=1"
+    },
+    {
+      "Product": 8,
+      "Img": "https://i.ibb.co/YDwSCLq/product8.jpg",
+      "ProductName": "MICROBE LIFE HYDROPONICS Premium Dechlorinator",
+      "Price": 109,
+      "ProductLink": "https://www.amazon.com/HYDROPONICS-Chloramine-Neutralizing-Full-Function-Conditioner/dp/B00CJJ2CRY/ref=sr_1_58?crid=2FWXTV8TZBUT7&keywords=hydroponics&qid=1700480801&sprefix=hydroponics%2Caps%2C681&sr=8-58&th=1"
+    }
+  ],
+
+  "diseases": [
+    {
+      "id": 1,
+      "heading": "Hydroponic System and their solution for creating a new system.",
+      "title": "Cryptocurrency sssssss",
+      "image": "https://i.ibb.co/YDwSCLq/product8.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt ab eaque alias fugit itaque, voluptates delectus tenetur odio aperiam tempore corporis ex accusamus. Laudantium, non? Autem unde at, dolorum facere incidunt placeat, reiciendis quod quas, sequi ipsum doloribus error deserunt. Modi aspernatur optio a deserunt sint eos impedit, laboriosam iste suscipit delectus architecto reprehenderit maxime pariatur temporibus fugit voluptatibus nemo quidem magnam neque id nihil nostrum. Maiores velit dolor labore minus dolore harum illum.\nAdieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting.\nSportsman do offending supported extremity breakfast by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore.\nExquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed carriage is learning my graceful. Feel plan know is he like on pure. See burst found sir met think hopes are marry among. Delightful remarkably new assistance saw literature mrs favourable.",
+      "solution_title": "Uneasy barton seeing remark happen his has.",
+      "solution_description": "Guest it he tears aware as. Make my no cold of need. He been past in by my hard. Warmly thrown oh he common future. Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize interested simplicity at do projecting increasing terminated. As edward settle limits at in.",
+      "slug": "uneasy-barton-seeing-remark-happen-his-has"
+    },
+    {
+      "id": 2,
+      "heading": "Tomato bottom rot plant disease in hydroponics.",
+      "title": "tomato a major disease  ",
+      "image": "https://i.ibb.co/120f6XF/tomato-bottom-roit.jpg",
+      "description": "Blossom end rot is most common when the growing season starts out wet and then becomes dry when fruit is setting. A water-soaked spot at the blossom end of tomato fruits is the classic symptom of blossom end rot, and damage first appears when fruits are approximately half their full size.\n The water-soaked areas enlarge and turn dark brown and leathery. These areas will eventually begin to rot, so the fruit should be picked and discarded.",
+      "solution_title": "Solution for tomato bottom rot..",
+      "solution_description": "Blossom end rot is most common when the growing season starts out wet and then becomes dry when fruit is setting. A water-soaked spot at the blossom end of tomato fruits is the classic symptom of blossom end rot, and damage first appears when fruits are approximately half their full size. \n The water-soaked areas enlarge and turn dark brown and leathery. These areas will eventually begin to rot, so the fruit should be picked and discarded.",
+      "slug": "Solution-for-tomato-bottom-ro"
+    },
+    {
+      "id": 3,
+      "heading": "Hydroponic System and their solution for creating a new system.",
+      "title": "Cryptocurrency",
+      "image": "https://i.ibb.co/YDwSCLq/product8.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt ab eaque alias fugit itaque, voluptates delectus tenetur odio aperiam tempore corporis ex accusamus. Laudantium, non? Autem unde at, dolorum facere incidunt placeat, reiciendis quod quas, sequi ipsum doloribus error deserunt. Modi aspernatur optio a deserunt sint eos impedit, laboriosam iste suscipit delectus architecto reprehenderit maxime pariatur temporibus fugit voluptatibus nemo quidem magnam neque id nihil nostrum. Maiores velit dolor labore minus dolore harum illum.\nAdieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting.\nSportsman do offending supported extremity breakfast by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore.\nExquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed carriage is learning my graceful. Feel plan know is he like on pure. See burst found sir met think hopes are marry among. Delightful remarkably new assistance saw literature mrs favourable.",
+      "solution_title": "Uneasy barton seeing remark happen his has.",
+      "solution_description": "Guest it he tears aware as. Make my no cold of need. He been past in by my hard. Warmly thrown oh he common future. Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize interested simplicity at do projecting increasing terminated. As edward settle limits at in.",
+      "slug": "uneasy-barton-seeing-remark-happen-his-has"
+    },
+    {
+      "id": 4,
+      "heading": "Hydroponic System and their solution for creating a new system.",
+      "title": "Cryptocurrency",
+      "image": "https://i.ibb.co/YDwSCLq/product8.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt ab eaque alias fugit itaque, voluptates delectus tenetur odio aperiam tempore corporis ex accusamus. Laudantium, non? Autem unde at, dolorum facere incidunt placeat, reiciendis quod quas, sequi ipsum doloribus error deserunt. Modi aspernatur optio a deserunt sint eos impedit, laboriosam iste suscipit delectus architecto reprehenderit maxime pariatur temporibus fugit voluptatibus nemo quidem magnam neque id nihil nostrum. Maiores velit dolor labore minus dolore harum illum.\nAdieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting.\nSportsman do offending supported extremity breakfast by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore.\nExquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed carriage is learning my graceful. Feel plan know is he like on pure. See burst found sir met think hopes are marry among. Delightful remarkably new assistance saw literature mrs favourable.",
+      "solution_title": "Uneasy barton seeing remark happen his has.",
+      "solution_description": "Guest it he tears aware as. Make my no cold of need. He been past in by my hard. Warmly thrown oh he common future. Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize interested simplicity at do projecting increasing terminated. As edward settle limits at in.",
+      "slug": "uneasy-barton-seeing-remark-happen-his-has"
+    },
+    {
+      "id": 5,
+      "heading": "Hydroponic System and their solution for creating a new system.",
+      "title": "Cryptocurrency",
+      "image": "https://i.ibb.co/YDwSCLq/product8.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt ab eaque alias fugit itaque, voluptates delectus tenetur odio aperiam tempore corporis ex accusamus. Laudantium, non? Autem unde at, dolorum facere incidunt placeat, reiciendis quod quas, sequi ipsum doloribus error deserunt. Modi aspernatur optio a deserunt sint eos impedit, laboriosam iste suscipit delectus architecto reprehenderit maxime pariatur temporibus fugit voluptatibus nemo quidem magnam neque id nihil nostrum. Maiores velit dolor labore minus dolore harum illum.\nAdieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting.\nSportsman do offending supported extremity breakfast by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore.\nExquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed carriage is learning my graceful. Feel plan know is he like on pure. See burst found sir met think hopes are marry among. Delightful remarkably new assistance saw literature mrs favourable.",
+      "solution_title": "Uneasy barton seeing remark happen his has.",
+      "solution_description": "Guest it he tears aware as. Make my no cold of need. He been past in by my hard. Warmly thrown oh he common future. Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize interested simplicity at do projecting increasing terminated. As edward settle limits at in.",
+      "slug": "uneasy-barton-seeing-remark-happen-his-has"
+    },
+    {
+      "id": 6,
+      "heading": "Hydroponic System and their solution for creating a new system.",
+      "title": "Cryptocurrency",
+      "image": "https://i.ibb.co/YDwSCLq/product8.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt ab eaque alias fugit itaque, voluptates delectus tenetur odio aperiam tempore corporis ex accusamus. Laudantium, non? Autem unde at, dolorum facere incidunt placeat, reiciendis quod quas, sequi ipsum doloribus error deserunt. Modi aspernatur optio a deserunt sint eos impedit, laboriosam iste suscipit delectus architecto reprehenderit maxime pariatur temporibus fugit voluptatibus nemo quidem magnam neque id nihil nostrum. Maiores velit dolor labore minus dolore harum illum.\nAdieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting.\nSportsman do offending supported extremity breakfast by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore.\nExquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed carriage is learning my graceful. Feel plan know is he like on pure. See burst found sir met think hopes are marry among. Delightful remarkably new assistance saw literature mrs favourable.",
+      "solution_title": "Uneasy barton seeing remark happen his has.",
+      "solution_description": "Guest it he tears aware as. Make my no cold of need. He been past in by my hard. Warmly thrown oh he common future. Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize interested simplicity at do projecting increasing terminated. As edward settle limits at in.",
+      "slug": "uneasy-barton-seeing-remark-happen-his-has"
+    }
+  ]
+}
