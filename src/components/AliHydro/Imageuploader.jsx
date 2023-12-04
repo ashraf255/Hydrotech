@@ -152,6 +152,7 @@ const ImageUploader = () => {
 
   const imageUploadHandler = (event, type) => {
     event.preventDefault();
+    if (!image) return;
 
     if (type === "drag") {
       setImage(event.dataTransfer.files[0]);
@@ -169,7 +170,9 @@ const ImageUploader = () => {
   }, [image]);
 
   const handleSubmit = () => {
+    if (!image) return;
     setUploadingProgress(50);
+    modalRef.current.click();
 
     setTimeout(() => {
       setShowImageSection(true);
@@ -178,6 +181,7 @@ const ImageUploader = () => {
       );
     }, 2000); // 2000 milliseconds (2 seconds) delay
   };
+  const modalRef = useRef(null);
 
   return (
     <>
@@ -200,10 +204,13 @@ const ImageUploader = () => {
             action="#"
             onClick={(event) => {
               event.preventDefault();
+              if (!image) return;
+
               fileInputRef.current.click();
             }}
             onDrop={(event) => imageUploadHandler(event, "drag")}
             onDragOver={(event) => {
+              if (!image) return;
               event.preventDefault();
             }}
           >
@@ -220,7 +227,7 @@ const ImageUploader = () => {
                     <div className="content-i">
                       <div className="details">
                         <span className="name capitalize flex w-full gap-2 justify-between">
-                          <span>{imageName}</span>
+                          <span>Your Plant image </span>
                           <span className="text-red-400">Uploading...</span>
                         </span>
                         <span className="percent"> </span>
@@ -243,7 +250,7 @@ const ImageUploader = () => {
                       <i className="fas fa-file-alt"></i>
                       <div className="details">
                         <span className="name capitalize">
-                          <span>{imageName}</span>
+                          <span> Detecting your plant image</span>
                           <span className="text-cyan-500 pl-2">Uploaded.</span>
                         </span>
                         <span className="size"> </span>
@@ -257,7 +264,7 @@ const ImageUploader = () => {
               <section className="mt-1.5 mb-3">
                 <div className="p-1 rounded-xl border-2 border-dashed border-[#6990f2] w-full">
                   <img
-                    src={URL.createObjectURL(image)}
+                    src={image.name && URL.createObjectURL(image)}
                     alt={image.name}
                     className="w-full h-full rounded-md"
                   />
@@ -279,9 +286,9 @@ const ImageUploader = () => {
             {imagePathName && (
               <p className="mt-2 text-black text-center">
                 Plant diasese detected it is:{" "}
-                <u>
+                {/* <u>
                   <b> {imagePathName}</b>
-                </u>
+                </u> */}
               </p>
             )}
           </section>
@@ -294,6 +301,32 @@ const ImageUploader = () => {
           hidden
         />
       </article>
+      <div>
+        {/* The button to open modal */}
+        <label htmlFor="my_modal_6" className="btn hidden " ref={modalRef}>
+          open modal
+        </label>
+
+        {/* Put this part before </body> tag */}
+        <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+        <div className="modal" role="dialog">
+          <div className="modal-box">
+            <h3 className="text-xl font-light capitalize text-gray-500">
+              Your plant disease detected your plant disease is
+            </h3>
+            <p className="py-4 text-center text-green-500">
+              <u>
+                <b> {imagePathName}</b>
+              </u>
+            </p>
+            <div className="modal-action">
+              <label htmlFor="my_modal_6" className="btn">
+                Close!
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
