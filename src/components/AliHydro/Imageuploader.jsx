@@ -208,7 +208,7 @@ const ImageUploader = () => {
             }}
           >
             <i className="fas fa-cloud-upload-alt"></i>
-            <p className="capitalize">{imageName}</p>
+            <p className="capitalize">Enter your plant image</p>
           </form>
 
           {showImageSection && (
