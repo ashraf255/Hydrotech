@@ -1,11 +1,12 @@
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  
-    function handleToast(){
-      toast.success('Successfully your message sent to -> alihydrotech01@gmail.com!', {
+  function handleToast() {
+    toast.success(
+      "Successfully your message sent to -> alihydrotech01@gmail.com!",
+      {
         position: "top-center",
         autoClose: 2000,
         hideProgressBar: false,
@@ -14,14 +15,13 @@ const Contact = () => {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
-    
-
-    }
+      }
+    );
+  }
   return (
     <>
-    <ToastContainer></ToastContainer>
-      <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px] " >
+      <ToastContainer></ToastContainer>
+      <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px] ">
         <div className="container pl-16">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -33,9 +33,11 @@ const Contact = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                  Welcome to our hydroponics community! We are excited to
+                  connect with you and provide assistance with any inquiries or
+                  feedback you may have. At [AliHydro Tech], we are dedicated to
+                  fostering a thriving hydroponics environment and supporting
+                  our community of growers .
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -57,7 +59,8 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      Bhaninathpur, Uddavganj,Sonargoan ,Narayanganj , Dhaka , Bangladesh
+                      Bhaninathpur, Uddavganj,Sonargoan ,Narayanganj , Dhaka ,
+                      Bangladesh
                     </p>
                   </div>
                 </div>
@@ -122,7 +125,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    alihydrotech01@gmail.com
+                      alihydrotech01@gmail.com
                     </p>
                   </div>
                 </div>
@@ -154,7 +157,8 @@ const Contact = () => {
                   />
                   <div>
                     <button
-                      type="submit" onClick={handleToast}
+                      type="submit"
+                      onClick={handleToast}
                       className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
                     >
                       Send Message

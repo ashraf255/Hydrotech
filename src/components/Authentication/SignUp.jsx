@@ -4,9 +4,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthProvider } from "./Provider";
 import Navbar from "../Shared file/Navbar";
 
-
-
-
 const SignUp = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -64,7 +61,6 @@ const SignUp = () => {
   const googlePopUpBtn = () => {
     signWithGooglePop()
       .then((res) => {
-
         console.log(res);
         navigate("/");
       })
@@ -73,7 +69,6 @@ const SignUp = () => {
 
   return (
     <>
-
       <div className="bg-white absolute w-full text-black-1400 px-6 lg:px-20">
         <Navbar></Navbar>
       </div>

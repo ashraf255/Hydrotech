@@ -177,9 +177,9 @@ const ImageUploader = () => {
     setTimeout(() => {
       setShowImageSection(true);
       setImagePathName(
-        image?.name ? image.name.split(".")[0] : "No Image Name"
+        image?.name ? image.name.split(".")[0] : "please enter your plant image"
       );
-    }, 2000); // 2000 milliseconds (2 seconds) delay
+    }, 1500); // 2000 milliseconds (2 seconds) delay
   };
   const modalRef = useRef(null);
 
@@ -301,24 +301,39 @@ const ImageUploader = () => {
           hidden
         />
       </article>
+
       <div>
         {/* The button to open modal */}
-        <label htmlFor="my_modal_6" className="btn hidden " ref={modalRef}>
-          open modal
+        <label htmlFor="my_modal_6" className="btn hidden" ref={modalRef}>
+          Open modal
         </label>
 
         {/* Put this part before </body> tag */}
         <input type="checkbox" id="my_modal_6" className="modal-toggle" />
         <div className="modal" role="dialog">
           <div className="modal-box">
-            <h3 className="text-xl font-light capitalize text-gray-500">
-              Your plant disease detected your plant disease is
+            {/* Image */}
+            <div className="p-1 rounded-xl border-2 border-dashed border-[#6990f2] w-full">
+              <img
+                src={image.name && URL.createObjectURL(image)}
+                alt={image.name}
+                className="w-full h-full rounded-md"
+              />
+            </div>
+
+            {/* Plant disease information */}
+            <h3 className="text-xl font-light capitalize text-gray-500 text-center">
+              Your plant disease detected, and the disease is
             </h3>
+
+            {/* Disease name */}
             <p className="py-4 text-center text-green-500">
               <u>
                 <b> {imagePathName}</b>
               </u>
             </p>
+
+            {/* Modal action */}
             <div className="modal-action">
               <label htmlFor="my_modal_6" className="btn">
                 Close!
