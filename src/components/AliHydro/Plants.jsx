@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Plantsstyle.css";
-import ShowSensorData from "./ShowSensorData";
+import ShowSensorData from "./Nutration_Monitoring/ShowSensorData";
 import BackBtn from "../Shared file/BackBtn";
 
 const Plants = () => {
@@ -19,7 +19,7 @@ const Plants = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Success Card */}
+          {/* Nutration card*/}
           <div className="w-full max-w-sm overflow-hidden rounded-lg bg-white bg-no-repeat bg-cover bg-gradient-to-t shadow-md duration-300 hover:scale-105 hover:shadow-xl">
             <figure>
               <img src="/drone.png" className="mx-auto mt-8 h-88" alt="Shoes" />
@@ -60,7 +60,7 @@ const Plants = () => {
             </p>
             <div className="space-x-4 bg-gray-100 py-4 text-center">
               <Link
-                to="/image-uploader"
+                to="/disease"
                 className="inline-block rounded-md bg-green-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400"
               >
                 {" "}

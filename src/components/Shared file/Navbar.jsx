@@ -20,7 +20,7 @@ const Navbar = () => {
           HOME
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           to={"/Shop"}
           className={({ isActive, isPending }) =>
@@ -33,7 +33,7 @@ const Navbar = () => {
         >
           Shop
         </NavLink>
-      </li>
+      </li> */}
       {/* <li>
         <NavLink
           to={"/Blog"}
@@ -48,7 +48,7 @@ const Navbar = () => {
           Blog
         </NavLink>
       </li> */}
-      <li>
+      {/* <li>
         <NavLink
           to={"/diseases"}
           className={({ isActive, isPending }) =>
@@ -61,7 +61,7 @@ const Navbar = () => {
         >
           Blog
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink
           to={"/About"}
@@ -109,7 +109,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-transparent  shadow-xl ">
+    <div className="navbar bg-white  shadow-xl ">
       <div className="navbar-start ">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

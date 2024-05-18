@@ -3,19 +3,25 @@ import Home from "../components/pages/Home/Home";
 import App from "../App";
 import About from "../components/pages/About/About";
 
-import Shop from "../components/pages/Shop/Shop";
+// import Shop from "../components/pages/Shop/Shop";
 import Blog from "../components/pages/Blog/Blog";
 import Contactus from "../components/pages/Contact Us/Contactus";
 import Privacy from "../components/pages/privacy";
 import Login from "../components/Authentication/Login";
 import SignUp from "../components/Authentication/SignUp";
 import Plants from "../components/AliHydro/Plants";
-import Imageuploader from "../components/AliHydro/Imageuploader";
-import ShowSensorData from "../components/AliHydro/ShowSensorData";
-import BlogDetails from "../components/pages/Blog/BlogDetails";
+import Imageuploader from "../components/AliHydro/Disease_Detection/Tomato_disease/TomatoImageuploader";
+
+// import BlogDetails from "../components/pages/Blog/BlogDetails";
 import Diseases from "../components/pages/Diseases";
 import DiseasesDetails from "../components/pages/Diseases/DiseasesDetails";
 import PrivateRoute from "./PrivateRoute";
+import ShowSensorData from "../components/AliHydro/Nutration_Monitoring/ShowSensorData";
+import ImageUploader from "../components/AliHydro/Disease_Detection/Tomato_disease/TomatoImageuploader";
+import Disease from "../components/AliHydro/Disease";
+import TomatoImageUploader from "../components/AliHydro/Disease_Detection/Tomato_disease/TomatoImageuploader";
+import LettuceImageUploader from "../components/AliHydro/Disease_Detection/lettuce_disease/LettuceImageUploader";
+import StrawberryImageUploader from "../components/AliHydro/Disease_Detection/Strawberry_disease/StrawberryImageuploader";
 
 const router = createBrowserRouter([
   {
@@ -30,11 +36,11 @@ const router = createBrowserRouter([
         path: "/About",
         element: <About></About>,
       },
-      {
-        path: "/Shop",
-        element: <Shop></Shop>,
-        // loader: () => fetch("/data.json")
-      },
+      // {
+      //   path: "/Shop",
+      //   element: <Shop></Shop>,
+      //   // loader: () => fetch("/data.json")
+      // },
       {
         path: "/Blog",
         element: <Blog></Blog>,
@@ -65,18 +71,27 @@ const router = createBrowserRouter([
     path: "/plants",
     element: <Plants></Plants>,
   },
-  {
-    path: "/image-uploader",
-    element: <Imageuploader></Imageuploader>,
-  },
+
   {
     path: "/show-sensor-data",
     element: <ShowSensorData />,
   },
-  // {
-  //   path: "blog/blog-details/:slug",
-  //   element: <BlogDetails/>,
-  // },
+  {
+    path: "/disease",
+    element: <Disease />,
+  },
+  {
+    path: "/tomatoimage-uploader",
+    element: <TomatoImageUploader />,
+  },
+  {
+    path: "/lettuceimage-uploader",
+    element: <LettuceImageUploader />,
+  },
+  {
+    path: "/Strawberryimage-uploader",
+    element: <StrawberryImageUploader />,
+  },
   {
     path: "/diseases/diseases-details/:slug",
     element: (

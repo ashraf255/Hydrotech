@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import BackBtn from "../Shared file/BackBtn";
+import BackBtn from "../../Shared file/BackBtn";
 import axios from "axios";
-import Userdate from "./date";
+import Userdate from "./Date";
 
 export default function ShowSensorData() {
   const [espData, setEspData] = useState({ status: false });
@@ -23,7 +23,7 @@ export default function ShowSensorData() {
     };
     fetchData();
 
-    // setInterval(fetchData, 1000);
+    setInterval(fetchData, 1000);
   }, []);
 
   return (

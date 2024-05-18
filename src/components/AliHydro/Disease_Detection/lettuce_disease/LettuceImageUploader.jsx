@@ -1,147 +1,8 @@
-// import { useEffect, useRef, useState } from "react";
-// import BackBtn from "../Shared file/BackBtn";
-
-// export default function imageUploader() {
-//   const [image, setImage] = useState({});
-//   const [imageName, setImageName] = useState("");
-//   const [uploadingProgress, setUploadingProgress] = useState(50);
-//   // const [imageUploadingState, setImageUploadingState] = useState(false);
-
-//   const fileInputRef = useRef();
-
-//   function imageUploadHandler(event, type) {
-//     event.preventDefault();
-
-//     if (type === "drag") {
-//       setImage(event.dataTransfer.files[0]);
-//     } else if (type === "input") {
-//       setImage(event.target.files[0]);
-//     }
-//   }
-
-//   useEffect(() => {
-//     const name = image?.name
-//       ? image.name.split(".")[0]
-//       : "Browse File to Upload!";
-
-//     setImageName(name.length >= 25 ? name.substring(0, 25) + "..." : name);
-//   }, [image]);
-
-//   return (
-//     <>
-//       <BackBtn></BackBtn>
-//       <article
-//         className="w-full min-h-screen flex items-center justify-center p-4"
-//         style={{
-//           backgroundImage: `url("https://i.ibb.co/VxQfNQg/diseasebackground.jpg")`,
-//           backgroundSize: "cover",
-//           backgroundRepeat: "no-repeat",
-//           backgroundPosition: "center",
-//           height: "450px",
-//         }}
-//       >
-//         <div className="wrapper">
-//           <header>Upload your plant image</header>
-//           <form
-//             action="#"
-//             onClick={function (event) {
-//               event.preventDefault();
-//               fileInputRef.current.click();
-//             }}
-//             onDrop={(event) => imageUploadHandler(event, "drag")}
-//             onDragOver={function (event) {
-//               event.preventDefault();
-//             }}
-//           >
-//             <i className="fas fa-cloud-upload-alt"></i>
-//             <p className="capitalize">{imageName}</p>
-//           </form>
-
-//           {/* If Images ia available or inserted */}
-//           {image?.name && (
-//             <div>
-//               {/* Uploading state */}
-//               <section className="progress-area">
-//                 <ul>
-//                   <li className="row">
-//                     <i className="fas fa-file-alt"></i>
-//                     <div className="content-i">
-//                       <div className="details">
-//                         <span className="name capitalize flex w-full gap-2 justify-between">
-//                           <span>{imageName}</span>
-//                           <span className="text-red-400">Uploading...</span>
-//                         </span>
-//                         <span className="percent"> </span>
-//                       </div>
-//                       <div className="progress-bar">
-//                         <div
-//                           className="progress"
-//                           style={{ width: uploadingProgress + "%" }}
-//                         ></div>
-//                       </div>
-//                     </div>
-//                   </li>
-//                 </ul>
-//               </section>
-
-//               {/* Upload Succeed state */}
-//               <section className="uploaded-area">
-//                 <ul>
-//                   <li className="row">
-//                     <div className="content-i upload">
-//                       <i className="fas fa-file-alt"></i>
-//                       <div className="details">
-//                         <span className="name capitalize">
-//                           <span>{imageName}</span>
-//                           <span className="text-cyan-500 pl-2">Uploaded.</span>
-//                         </span>
-//                         <span className="size"> </span>
-//                       </div>
-//                     </div>
-//                     <i className="fas fa-check"></i>
-//                   </li>
-//                 </ul>
-//               </section>
-
-//               {/* uploading Images */}
-//               <section className="mt-1.5 mb-3">
-//                 <div className="p-1 rounded-xl border-2 border-dashed border-[#6990f2] w-full">
-//                   <img
-//                     src={URL.createObjectURL(image)}
-//                     alt={image.name}
-//                     className="w-full h-full rounded-md"
-//                   />
-//                 </div>
-//               </section>
-//             </div>
-//           )}
-
-//           <section className="w-full mt-1">
-//             <button
-//               className="w-full bg-[#6990f24d] text-[#6990f2] hover:text-slate-100 hover:tracking-wider font-bold uppercase hover:bg-[#6990f2] py-2 text-center text-xl rounded-md duration-500"
-//               type="submit"
-//               role="button"
-//               // onClick={handleSubmit}
-//             >
-//               submit
-//             </button>
-//           </section>
-//         </div>
-
-//         <input
-//           ref={fileInputRef}
-//           type="file"
-//           onChange={(event) => imageUploadHandler(event, "input")}
-//           hidden
-//         />
-//       </article>
-//     </>
-//   );
-// }
 import { useEffect, useRef, useState } from "react";
-import BackBtn from "../Shared file/BackBtn";
+import BackBtn from "../../../Shared file/BackBtn";
+import axios from "axios";
 
-const ImageUploader = () => {
+const LettuceImageUploader = () => {
   const [image, setImage] = useState({});
   const [imageName, setImageName] = useState("");
   const [uploadingProgress, setUploadingProgress] = useState(50);
@@ -169,10 +30,28 @@ const ImageUploader = () => {
     setImageName(name.length >= 25 ? name.substring(0, 25) + "..." : name);
   }, [image]);
 
+  const [plantCondition, setPlantCondition] = useState({ status: false });
+
   const handleSubmit = () => {
     if (!image) return;
     setUploadingProgress(50);
     modalRef.current.click();
+
+    const formData = new FormData();
+    formData.append("image", image);
+    (async function () {
+      const response = await axios.post(
+        import.meta.env.VITE_LETTUCE_API_URL,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      const data = await response.data;
+      setPlantCondition({ ...plantCondition, status: true, data });
+    })();
 
     setTimeout(() => {
       setShowImageSection(true);
@@ -181,6 +60,8 @@ const ImageUploader = () => {
       );
     }, 1500); // 2000 milliseconds (2 seconds) delay
   };
+
+  console.log(plantCondition);
   const modalRef = useRef(null);
 
   return (
@@ -329,7 +210,24 @@ const ImageUploader = () => {
             {/* Disease name */}
             <p className="py-4 text-center text-green-500">
               <u>
-                <b> {imagePathName}</b>
+                <b>
+                  {" "}
+                  {plantCondition.status && plantCondition.data.predicted_class}
+                </b>
+              </u>
+            </p>
+            <h3 className="text-xl font-light capitalize text-gray-500 text-center">
+              Confidence is
+            </h3>
+
+            {/* Disease name */}
+            <p className="py-4 text-center text-green-500">
+              <u>
+                <b>
+                  {" "}
+                  {plantCondition.status &&
+                    plantCondition.data.confidence_percentage}
+                </b>
               </u>
             </p>
 
@@ -346,4 +244,4 @@ const ImageUploader = () => {
   );
 };
 
-export default ImageUploader;
+export default LettuceImageUploader;
